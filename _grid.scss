@@ -1,0 +1,31 @@
+// Grid Logic
+.container {
+  max-width: $max-width;
+  margin: auto;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+  
+.col {
+  flex-basis: 100%;
+
+  @media screen and (min-width: $medium-break) {
+    flex: 1;
+  
+  }
+}
+
+// Col specifics
+._25 {
+  flex: .25;
+}
+
+._35 {
+  flex: .35;
+}

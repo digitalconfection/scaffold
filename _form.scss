@@ -1,0 +1,30 @@
+// _form.scss
+@mixin form_object{
+    all: initial;
+    * {
+      all: unset;
+    }
+    width: 96%;        
+    padding-top: .8em;
+    padding-bottom: .8em;
+    padding-left: 2%;
+    padding-right: 2%;
+    margin-top: 0px;
+    margin-bottom: 10px;
+    outline: none;    
+}
+
+input {
+    margin-top: 0px;
+    margin-bottom: 10px;
+}
+
+input[type="text"], select, textarea {
+    @include form_object;
+}
+
+input[type="submit"], button {
+    @include form_object;    
+    text-align: center;
+    cursor: pointer;
+}

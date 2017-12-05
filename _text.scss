@@ -1,0 +1,35 @@
+// Grid font.
+
+body {
+    font-size: $base-font;
+    line-height: $base-font * $ratio;
+}
+
+p {
+    margin: auto;
+    max-width: 80ch;     
+}
+
+h1, h2, h3, h4, ol, ul {
+    margin: 0;
+}
+
+h1 {
+    font-size: $base-font * 2.5;
+    line-height: ($base-font * 2.5) * $ratio;
+}
+
+h2 {
+    font-size: $base-font * 2;
+    line-height: ($base-font * 2) * $ratio;
+}
+
+h3 {
+    font-size: $base-font * 1.5;
+    line-height: ($base-font * 1.5) * $ratio;
+}
+
+h4 {
+    font-size: $base-font * 1.2;
+    line-height: ($base-font * 1.2) * $ratio;
+}

@@ -1,0 +1,10 @@
+// Individual card scss
+@import '_text.scss';
+@import '_breakpoints.scss';
+@import '_grid.scss';
+@import '_form.scss';
+
+// Browser Hacks
+:focus {
+    outline: none;
+}
