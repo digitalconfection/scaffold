@@ -1,15 +1,20 @@
 // Grid Logic
+
+@mixin center-center {
+  align-items: center;
+  justify-content: center;
+}
+
 .container {
   max-width: $max-width;
   margin: auto;
+  word-wrap: break-word;
 }
 
 .row {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  align-items: center;
-  justify-content: center;
 }
   
 .col {
@@ -29,3 +34,9 @@
 ._35 {
   flex: .35;
 }
+
+._75 {
+  flex: .75;
+}
+
+

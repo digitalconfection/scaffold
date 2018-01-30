@@ -1,8 +1,14 @@
+// Variables
+$base-font: 19px;
+$ratio: 1.618;
+$max-width: 1000px;
+
 // Individual card scss
-@import '_text.scss';
-@import '_breakpoints.scss';
-@import '_grid.scss';
-@import '_form.scss';
+@import 'text';
+@import 'breakpoints';
+@import 'grid';
+@import 'input';
+@import 'misc';
 
 // Browser Hacks
 :focus {

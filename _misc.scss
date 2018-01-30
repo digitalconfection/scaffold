@@ -1,0 +1,14 @@
+// misc.scss
+
+.center {
+    text-align: center;
+}
+
+@mixin image-block ($image_src){
+    display: block;
+    background-image: url($image_src);
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: auto;
+}
