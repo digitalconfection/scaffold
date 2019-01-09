@@ -1,42 +1,13 @@
-// Grid Logic
-
-@mixin center-center {
-  align-items: center;
-  justify-content: center;
-}
-
-.container {
-  max-width: $max-width;
-  margin: auto;
-  word-wrap: break-word;
-}
-
-.row {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-}
-  
-.col {
-  flex-basis: 100%;
-
-  @media screen and (min-width: $medium-break) {
-    flex: 1;
-  
-  }
-}
-
-// Col specifics
-._25 {
-  flex: .25;
-}
-
-._35 {
-  flex: .35;
-}
-
-._75 {
-  flex: .75;
+// Grid
+@mixin two-col($gap, $fr1, $fr2 ) {
+    display: grid;
+    grid-gap: $gap;
+    grid-template-columns: $fr1 $fr2;
 }
 
 
+@mixin three-col($gap, $fr1, $fr2, $fr3) {
+    display: grid;
+    grid-gap: $gap;
+    grid-template-columns: $fr1 $fr2 $fr3;
+}

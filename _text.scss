@@ -1,35 +1,99 @@
-// Grid font.
+// Intial Credits: https://gist.github.com/Fischaela/87532a4e4e42ed8ebd14#file-_responsive-typography-scss
+
+// Ratio and base variables
+$ratio: 1.2;
+$base: 0.875;
+$base-em: $base * 1em;
+$base-px: $base * 16px;
+
+// Scale step variables
+// Type scaling after http://type-scale.com/ with golden ratio
+$ms0: 1;
+$ms1: $ratio;        /* 1.2   */
+$ms2: $ratio * $ms1; /* 1.44  */
+$ms3: $ratio * $ms2; /* 1.728 */
+$ms4: $ratio * $ms3; /* 2.074 */
+$ms5: $ratio * $ms4; /* 2.488 */
+$ms6: $ratio * $ms5; /* 2.986 */
+$ms7: $ratio * $ms6; /* 3.583 */
+$ms8: $ratio * $ms7; /* 4.2996 */
+$ms9: $ratio * $ms8; /* 5,15952 */
 
 body {
-    font-size: $base-font;
-    line-height: $base-font * $ratio;
+  font-family: sans-serif;
+  font-size: $base-em * $ms0;
+  line-height: $base * $ms4;
+
+  @media (min-width: $mq-xs) {
+    font-size: .9em * $ms1;
+
+  }
+
+  @media (min-width: $mq-m) {
+    font-size: $base-px * $ms2;
+  }
+
+  @media (min-width: $x-large-break) {
+    font-size: $base-px * $ms3;
+
+  }
 }
 
 p {
-    margin: auto;
-    max-width: 80ch;     
+  margin-bottom: 1.3em;
+  max-width: 38em;
 }
 
-h1, h2, h3, h4, ol, ul {
-    margin: 0;
+h1,h2,h3,h4,h5,h6 {
+  margin: 0;
+  line-height: 1.2em;
+  margin-bottom: .4em;
 }
 
-h1 {
-    font-size: $base-font * 2.5;
-    line-height: ($base-font * 2.5) * $ratio;
+h6 {
+  font-size: $base-em / $ms1;
 }
 
-h2 {
-    font-size: $base-font * 2;
-    line-height: ($base-font * 2) * $ratio;
-}
-
-h3 {
-    font-size: $base-font * 1.5;
-    line-height: ($base-font * 1.5) * $ratio;
+h5 {
+  font-size: $base-em * $ms0;
 }
 
 h4 {
-    font-size: $base-font * 1.2;
-    line-height: ($base-font * 1.2) * $ratio;
+  font-size: $base-em * $ms1;
+}
+
+h3 {
+  font-size: $base-em * $ms2;
+
+  @media (min-width: $mq-s) {
+    font-size: $base-em * $ms3;
+  }
+}
+
+h2 {
+  font-size: $base-em * $ms3;
+
+  @media (min-width: $mq-s) {
+    font-size: $base-em * $ms4;
+  }
+
+  @media (min-width: $mq-m) {
+    font-size: $base-em * $ms5;
+  }
+}
+
+h1 {
+  font-size: $base-em * $ms4;
+
+  @media (min-width: $mq-s) {
+    font-size: $base-em * $ms5;
+  }
+
+  @media (min-width: $mq-m) {
+    font-size: $base-em * $ms6;
+  }
+
+  @media (min-width: $mq-l) {
+    font-size: $base-em * $ms7;
+  }
 }

@@ -1,5 +1,4 @@
 // misc.scss
-
 .center {
     text-align: center;
 }
@@ -11,4 +10,14 @@
     background-position: center;
     background-repeat: no-repeat;
     margin: auto;
+}
+
+// Accessibility Hide
+.acc-hide {
+    position:absolute;
+    left:-10000px;
+    top:auto;
+    width:1px;
+    height:1px;
+    overflow:hidden;
 }

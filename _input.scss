@@ -23,17 +23,10 @@ input[type="text"], select, textarea {
     @include form_object;
 }
 
-input[type="submit"], button, {
-    @include form_object;    
-    text-align: center;
-    max-width: 200px;
-    text-align: center;
-    cursor: pointer;
-}
-
 .button {
-    margin: auto;   
     display: block;
     width: 200px;
     padding: 10px;
+    text-align: center;
+    cursor: pointer;
 }
