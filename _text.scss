@@ -1,5 +1,4 @@
 // Intial Credits: https://gist.github.com/Fischaela/87532a4e4e42ed8ebd14#file-_responsive-typography-scss
-
 // Ratio and base variables
 $ratio: 1.2;
 $base: 0.875;
@@ -24,29 +23,29 @@ body {
   font-size: $base-em * $ms0;
   line-height: $base * $ms4;
 
-  @media (min-width: $mq-xs) {
-    font-size: .9em * $ms1;
-
+  @media (min-width: $txt-xs) {
+    font-size: 1em * $ms1;
   }
 
-  @media (min-width: $mq-m) {
+  @media (min-width: $txt-m) {
     font-size: $base-px * $ms2;
   }
 
   @media (min-width: $x-large-break) {
     font-size: $base-px * $ms3;
-
   }
 }
 
 p {
-  margin-bottom: 1.3em;
-  max-width: 38em;
+  max-width: 40em;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: .4em;
 }
 
 h1,h2,h3,h4,h5,h6 {
   margin: 0;
-  line-height: 1.2em;
+  line-height: $ratio;
   margin-bottom: .4em;
 }
 
@@ -65,7 +64,7 @@ h4 {
 h3 {
   font-size: $base-em * $ms2;
 
-  @media (min-width: $mq-s) {
+  @media (min-width: $txt-s) {
     font-size: $base-em * $ms3;
   }
 }
@@ -73,27 +72,27 @@ h3 {
 h2 {
   font-size: $base-em * $ms3;
 
-  @media (min-width: $mq-s) {
+  @media (min-width: $txt-s) {
     font-size: $base-em * $ms4;
   }
 
-  @media (min-width: $mq-m) {
+  @media (min-width: $txt-m) {
     font-size: $base-em * $ms5;
   }
 }
 
 h1 {
-  font-size: $base-em * $ms4;
+  font-size: $base-em * $ms5;
 
-  @media (min-width: $mq-s) {
-    font-size: $base-em * $ms5;
-  }
-
-  @media (min-width: $mq-m) {
+  @media (min-width: $txt-s) {
     font-size: $base-em * $ms6;
   }
 
-  @media (min-width: $mq-l) {
+  @media (min-width: $txt-m) {
     font-size: $base-em * $ms7;
+  }
+
+  @media (min-width: $txt-l) {
+    font-size: $base-em * $ms8;
   }
 }

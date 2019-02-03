@@ -1,7 +1,4 @@
 // misc.scss
-.center {
-    text-align: center;
-}
 
 @mixin image-block ($image_src){
     display: block;
@@ -10,6 +7,19 @@
     background-position: center;
     background-repeat: no-repeat;
     margin: auto;
+}
+
+.center {
+    text-align: center;
+}
+
+// Code format.
+pre {
+    white-space: pre-wrap;       /* css-3 */
+    white-space: -moz-pre-wrap;  /* Mozilla, since 1999 */
+    white-space: -pre-wrap;      /* Opera 4-6 */
+    white-space: -o-pre-wrap;    /* Opera 7 */
+    word-wrap: break-word;       /* Internet Explorer 5.5+ */
 }
 
 // Accessibility Hide
@@ -21,3 +31,8 @@
     height:1px;
     overflow:hidden;
 }
+
+// Browser Hacks
+// :focus {
+//     outline: none;
+// }
