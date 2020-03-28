@@ -1,7 +1,7 @@
 // Variables
-$base-font: 19px;
+$base-font: 18px;
 $ratio: 1.618;
-$max-width: 1200px;
+$max-width: 1250px;
 
 // Individual card scss
 @import 'breakpoints';
@@ -11,6 +11,12 @@ $max-width: 1200px;
 @import 'grid';
 @import 'misc';
 
-html, body {
-    overflow-x: hidden !important;
+// html, body {
+//   overflow-x: hidden !important;
+// }
+
+.container {
+  max-width: $max-width;
+  display: block;
+  margin: auto;
 }

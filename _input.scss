@@ -22,11 +22,3 @@ input {
 input[type="text"], select, textarea {
     @include form_object;
 }
-
-.button {
-    display: block;
-    width: 200px;
-    padding: 10px;
-    text-align: center;
-    cursor: pointer;
-}
